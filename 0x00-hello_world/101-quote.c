@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 
 /**
  * main - Entry point "and that piece of art is useful" - Dora korpar, 2015-10-15",
