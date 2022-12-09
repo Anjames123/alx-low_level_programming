@@ -2,8 +2,8 @@
 #include <unistd.h>
 
 /**
- * main - Entry point
- *
+ * main - Entry point "and that piece of art is useful" - Dora korpar, 2015-10-15",
+ * followed by a newline, to standard error.
  * Return: Always 1 
  */
 
