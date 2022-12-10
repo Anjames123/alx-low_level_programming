@@ -1,34 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - Entry point 
- *
- * Returns: Always 0 (success)
- *
+ * main - Entry point
+ * @void: parameter
+ * Return: 0 (success)
  */
 
 int main(void)
-
 {
-	int ones = '0';
-	int tens = '0';
+	int i;
+	int j;
 
-	for (tens = '0'; tens <= '9'; tens++)/* prints tens digit*/
+	for (i = 48; i < 58; i++)
 	{
-		for (ones = '0'; ones <= '9'; ones++)/* prints ones digit*/
+		for (j = i + 1; j < 58; j++)
 		{
-			if (!((ones == tens) || (tens > ones)))/* eliminates repitition*/
+			putchar(i);
+			putchar(j);
+			if (i != 56 && j != 58)
 			{
-				putchar(tens);
-				putchar(ones);
-				if (!(ones == '9' && tens == '8'))/* addes comma and space*/
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(44);
+				putchar(32);
 			}
 		}
 	}
-	putchar('\n');
+	putchar(10);
+
 	return (0);
 }
