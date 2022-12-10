@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible different combinations of two digits 
+ * main - Entry point 
  *
  * Returns: Always 0 (success)
  *
@@ -31,6 +31,5 @@ int main(void)
 	}
 
 	putchar('\n');
-
 	return (0);
 }
