@@ -2,23 +2,25 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (success)
  */
 
 int main(void)
-{
-     	int c = 0;
+        {
+	int a;
 
-	while (c < 10)
-	{
-		putchar(48 + c);
-		if (c != 9)
+	for (a = 0; a < 10; a++)
+	{	
+		putchar(a + '0');
+                if (a < 9)
 		{
-			putchar(',');
-			putchar(' ');
+        	putchar(',');
+		putchar(' ');
 		}
-	}
 
+	} 
 	putchar('\n');
 	return (0);
-}	
+}
+
+
