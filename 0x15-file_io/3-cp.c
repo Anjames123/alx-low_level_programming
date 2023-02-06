@@ -39,8 +39,7 @@ void close_file(int fd)
 
 	if (c == -1)
 	{
-		dprintf(STDERR_FILENO,
-				"Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 	}
 }
 
@@ -63,8 +62,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO,
-				"Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
@@ -94,8 +92,7 @@ int main(int argc, char *argv[])
 		}
 
 		r = read(from, buffer, 1024);
-		to = open(argv[2],
-				O_WRONLY | O_APPEND);
+		to = open(argv[2], O_WRONLY | O_APPEND);
 
 	} while (r > 0);
 
