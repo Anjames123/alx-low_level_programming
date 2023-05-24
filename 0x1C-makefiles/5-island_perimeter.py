@@ -4,7 +4,8 @@
 
 def num_water_neighbors(grid, i, j):
     """
-    Returns the count of neighboring water cells around a given cell in the grid.
+    Returns the count of neighboring water cells around a
+    given cell in the grid.
 
     Args:
         grid (list[list[int]]): The grid representing the island.
